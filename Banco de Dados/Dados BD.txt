@@ -1,0 +1,43 @@
+No bitvise abrir a pasta
+
+/etc/postgresql/17/main
+
+EDITAR O ARQUIVO postgresql.conf
+
+Na linha 6 apague o # e em localhost substitua por *   E SALVAR
+
+
+Depois configurar o pg_hba.conf
+
+Na linha 118 md5
+Na linha 123 md5
+Na linha 125 md5
+
+Na linha 125 0.0.0.0/0
+Na linha 131 0.0.0.0/0
+
+E DEPOIS SALVAR
+----------------------------------------------------------------
+
+CRIAR UMA SENHA PARA O USUÁRIO POSTGRES
+
+ABRA O TERMINAL E DIGITE: 
+sudo -u postgres psql
+
+ALTER USER postgres WITH PASSWORD '16101984Gui';
+
+aperte enter e depois: para sair digite \q 
+
+---------------------------------------------
+
+
+BAIXAR O SOFTWARE 
+DBeaver: https://dbeaver.io/download/
+
+-----------------------------------------------------
+
+sudo service postgresql restart
+
+
+
+ALTER USER postgres WITH PASSWORD 'rafael3232';
